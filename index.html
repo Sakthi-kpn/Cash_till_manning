@@ -244,8 +244,8 @@ const monName=m=>{const x=new Date(m+'-01T00:00');const last=D.dates.filter(d=>d
 const prevOf=m=>{const i=MONTHS.indexOf(m);return i>0?MONTHS[i-1]:null};
 const refMonth=()=>S.month==='all'?LATEST:S.month;
 $id('month').innerHTML=MONTHS.slice(-6).map(m=>`<button data-v="${m}">${monName(m)}</button>`).join('')+'<button data-v="all">All</button>';
-const S=window.__S||({month:LATEST,tm:'Gowtham',com:'',store:'',grp:'auto',sort:null,target:80});window.__S=S;if(!MONTHS.includes(S.month)&&S.month!=='all')S.month=LATEST;
-if(!R.some(r=>r.tm==='Gowtham'))S.tm='';
+const S=window.__S||({month:LATEST,tm:'',com:'',store:'',grp:'auto',sort:null,target:80});window.__S=S;if(!MONTHS.includes(S.month)&&S.month!=='all')S.month=LATEST;
+
 const $=id=>document.getElementById(id);
 const pct=(v,d=1)=>v==null||isNaN(v)?'–':(v*100).toFixed(d)+'%';
 const fmtD=d=>{const x=new Date(d+'T00:00');return x.toLocaleDateString('en-GB',{day:'2-digit',month:'short'})};

@@ -5,3 +5,4 @@ data_issues.txt
 # old root files (dashboard now lives in index.html, data in data/)
 /Cash_Till_Manned_Dashboard.html
 /Cash Till - *.xlsx
+auto_push.log
